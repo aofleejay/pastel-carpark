@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pastel Car Park</title>
+	<link rel="stylesheet" href="asset/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="heading text-center">Pastel Car Park</h1>
+		<section class="price-section row">
+			<div class="col-xs-12 text-center">
+		  		<form id="price-form" class="price-form form-inline">
+		  			<div class="form-group">
+		  				<label for="price-input">Price per car </label>
+    					<input type="number" min="0" id="price-input" class="form-control" required>
+		  			</div>
+		  			<input class="btn btn-default" type="submit" value="submit">
+		  		</form>
+			</div>
+		</section>
+		<section id="booking-section" class="booking-section">
+			<div class="row">
+				<div class="col-xs-6 col-md-3"><div class="booking-item thumbnail"></div></div>
+			  	<div class="col-xs-6 col-md-3"><div class="booking-item thumbnail"></div></div>
+			  	<div class="col-xs-6 col-md-3"><div class="booking-item thumbnail"></div></div>
+			  	<div class="col-xs-6 col-md-3"><div class="booking-item thumbnail"></div></div>
+			  	<div class="col-xs-6 col-md-3"><div class="booking-item thumbnail"></div></div>
+			  	<div class="col-xs-6 col-md-3"><div class="booking-item thumbnail"></div></div>
+			  	<div class="col-xs-6 col-md-3"><div class="booking-item thumbnail"></div></div>
+			  	<div class="col-xs-6 col-md-3"><div class="booking-item thumbnail"></div></div>
+			</div>
+		</section>
+		<section id="summary-section" class="summary-section">
+			<div class="row">
+				<div class="col-xs-12 text-right">
+					<span>Avaliable</span>
+					<span id="carpark-avaliable">8</span>
+					<span>/8</span>
+					<span>Total</span>
+					<span id="carpark-totalprice">0</span>
+					<span>Baht</span>
+					<button id="checkout" class="btn btn-default">Checkout</button>
+				</div>
+			</div>
+		</section>
+	</div>	
+	<script type="text/javascript" src="asset/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="asset/bootstrap.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
